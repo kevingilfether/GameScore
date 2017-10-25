@@ -46,7 +46,7 @@ namespace GameScore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Points")] Score score)
+        public ActionResult Create([Bind(Include = "ID,Name,Points,Team")] Score score)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace GameScore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Points")] Score score)
+        public ActionResult Edit([Bind(Include = "ID,Name,Points,Team")] Score score)
         {
             if (ModelState.IsValid)
             {
