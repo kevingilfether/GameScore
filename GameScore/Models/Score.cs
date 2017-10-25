@@ -12,6 +12,8 @@ namespace GameScore.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public int Points { get; set; }
-
+        //Added later to MVC -- will break wbsite upon launch 
+        //because "Team" is not in model?
+        public string Team { get; set; }
     }
 }
